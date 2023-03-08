@@ -43,9 +43,6 @@ object RestaurantUtil {
         restaurant.category = getRandomString(categories, random)
         restaurant.photo = getRandomImageUrl(random)
         restaurant.price = getRandomInt(prices, random)
-        val numRating = random.nextInt(20)
-        restaurant.numRatings = numRating
-        restaurant.avgRating = RatingUtil.getAverageRating(RatingUtil.getRandomList(numRating))
 
         // Note: average rating intentionally not set
 
